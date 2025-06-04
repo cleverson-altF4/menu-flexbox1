@@ -20,23 +20,54 @@
         
 
         header{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
             background-color: black;
-            height: 350px;
+            align-items: center;
             padding: 10px;
 
+
         }
+
+         header > nav > a{
+            margin: 5px;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            
+        }
+
+        header > nav > a:hover{
+            background-color: rgba(255, 255, 255, 0.596);
+            color: black;
+            transition: 1s;
+
+        }
+
+        header > nav{
+            display: flex;
+            flex-flow: row wrap;
+            border: 1px solid white;
+            padding: 5px;
+            margin-top: 10px;
+            justify-content: start;
+            
+            
+        }
+
 
         h1{
             color: white;
             font-size: 2em;
+            flex: 0 0 100px;
             border: 1px solid white;
+            
             
         }
 
-        nav{
-            border: 1px solid white;
-            padding: 10px;
-        }
+        
+       
     </style>
 </head>
 <body>
@@ -47,6 +78,8 @@
             <a href="#">Celular</a>
             <a href="#">Tablet</a>
             <a href="#">computador</a>
+            <a href="#">Mobile</a>
+            <a href="#">sobre</a>
         </nav>
     </header>
 </body>
